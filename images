@@ -1,1 +1,5 @@
+mv pic1.jpg pic2.jpg pic3.jpg pic3.jpg pic4.jpg pic5.jpg images/
 
+git add images/
+git commit -m "Moved images to images/ folder"
+git push origin main
