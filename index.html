@@ -64,14 +64,29 @@
       <img src="pic5.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 5">
     </div>
 
-    <!-- Navigation Buttons -->
-    <button onclick="prevSlide()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white">
-      ◀
-    </button>
-    <button onclick="nextSlide()" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white">
-      ▶
-    </button>
+ <!-- Outer fixed-width visible frame -->
+<div class="relative w-[320px] h-[320px] mx-auto overflow-hidden rounded-xl shadow-lg">
+  
+  <!-- Slide container -->
+  <div id="slides" class="flex transition-transform duration-500 ease-in-out">
+    <!-- your slides… -->
   </div>
+
+  <!-- Navigation Buttons (moved outside) -->
+  <section>
+  <button
+    onclick="prevSlide()"
+    class="absolute top-1/2 -left-8 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
+  >
+    ◀
+  </button>
+  <button
+    onclick="nextSlide()"
+    class="absolute top-1/2 -right-8 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
+  >
+    ▶
+  </button>
+</div>
 </section>
 
   <script>
