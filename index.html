@@ -49,43 +49,40 @@
     </ul>
   </section>
 
+<!-- Slideshow Section -->
 <section id="slideshow" class="mb-12">
   <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Gallery</h2>
 
-  <!-- Outer fixed-width visible frame -->
-  <div class="relative w-[320px] h-[320px] mx-auto overflow-hidden rounded-xl shadow-lg">
-    
-    <!-- Slide container -->
-    <div id="slides" class="flex transition-transform duration-500 ease-in-out">
-      <img src="pic1.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 1">
-      <img src="pic2.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 2">
-      <img src="pic3.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 3">
-      <img src="pic4.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 4">
-      <img src="pic5.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 5">
+  <!-- Outer wrapper to contain slideshow and arrows -->
+  <div class="relative w-[320px] mx-auto">
+    <!-- Slide frame -->
+    <div class="overflow-hidden rounded-xl shadow-lg">
+      <!-- Slide container -->
+      <div id="slides" class="flex transition-transform duration-500 ease-in-out">
+        <img src="pic1.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 1">
+        <img src="pic2.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 2">
+        <img src="pic3.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 3">
+        <img src="pic4.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 4">
+        <img src="pic5.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 5">
+      </div>
     </div>
 
- <!-- Outer fixed-width visible frame -->
-<div class="relative w-[320px] h-[320px] mx-auto overflow-hidden rounded-xl shadow-lg">
-  
-  <!-- Slide container -->
-  <div id="slides" class="flex transition-transform duration-500 ease-in-out">
-    <!-- your slides… -->
+    <!-- Navigation Arrows positioned outside -->
+    <button
+      onclick="prevSlide()"
+      class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
+    >
+      ◀
+    </button>
+    <button
+      onclick="nextSlide()"
+      class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
+    >
+      ▶
+    </button>
   </div>
+</section>
 
-  <!-- Navigation Buttons (moved outside) -->
-  <button
-    onclick="prevSlide()"
-    class="absolute top-1/2 -left-8 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
-  >
-    ◀
-  </button>
-  <button
-    onclick="nextSlide()"
-    class="absolute top-1/2 -right-8 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
-  >
-    ▶
-  </button>
-</div>
 
 
   <script>
