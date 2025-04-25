@@ -48,18 +48,22 @@
     </ul>
   </section>
 
- <section id="slideshow" class="mb-12">
+<section id="slideshow" class="mb-12">
   <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Gallery</h2>
-  <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
+
+  <!-- Outer fixed-width visible frame -->
+  <div class="relative w-[320px] h-[320px] mx-auto overflow-hidden rounded-xl shadow-lg">
+    
+    <!-- Slide container -->
     <div id="slides" class="flex transition-transform duration-500 ease-in-out">
-      <img src="pic1.jpg" class="w-[300px] h-[300px] object-cover flex-shrink-0 mx-2 rounded-lg shadow" alt="Slide 1">
-      <img src="pic2.jpg" class="w-[300px] h-[300px] object-cover flex-shrink-0 mx-2 rounded-lg shadow" alt="Slide 2">
-      <img src="pic3.jpg" class="w-[300px] h-[300px] object-cover flex-shrink-0 mx-2 rounded-lg shadow" alt="Slide 3">
-      <img src="pic4.jpg" class="w-[300px] h-[300px] object-cover flex-shrink-0 mx-2 rounded-lg shadow" alt="Slide 4">
-      <img src="pic5.jpg" class="w-[300px] h-[300px] object-cover flex-shrink-0 mx-2 rounded-lg shadow" alt="Slide 5">
+      <img src="pic1.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 1">
+      <img src="pic2.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 2">
+      <img src="pic3.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 3">
+      <img src="pic4.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 4">
+      <img src="pic5.jpg" class="w-[320px] h-[320px] object-cover flex-shrink-0" alt="Slide 5">
     </div>
 
-    <!-- Arrows -->
+    <!-- Navigation Buttons -->
     <button onclick="prevSlide()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white">
       ◀
     </button>
@@ -71,29 +75,27 @@
 
 
 
-  <!-- JavaScript for slideshow -->
+
   <script>
-  let currentSlide = 0;
+  let index = 0;
   const slides = document.getElementById("slides");
   const totalSlides = slides.children.length;
 
-  function showSlide(index) {
-    const width = slides.children[0].clientWidth;
-    slides.style.transform = `translateX(-${index * width}px)`;
+  function updateSlide() {
+    slides.style.transform = `translateX(-${index * 320}px)`;
   }
 
   function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
+    index = (index + 1) % totalSlides;
+    updateSlide();
   }
 
   function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(currentSlide);
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
   }
-
-  window.addEventListener("resize", () => showSlide(currentSlide)); 
 </script>
+
 
   <section id="contact" class="bg-gradient-to-r from-teal-100 to-green-100 p-6 rounded-xl shadow">
     <h2 class="text-2xl font-bold text-green-800 mb-4">Contact Us</h2>
