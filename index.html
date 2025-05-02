@@ -65,16 +65,104 @@
 
   </section>
 
-  <section id="services" class="mb-12 bg-green-200 p-6 rounded-xl shadow">
-    <h2 class="text-2xl font-bold text-green-700 mb-6">Our Services</h2>
-    <ul class="text-lg list-disc pl-5 space-y-3">
-      <li class="flex items-start"><span class="mr-2">🧑‍⚕️</span>Care Givers</li>
-      <li class="flex items-start"><span class="mr-2">🩺</span>Nursing Care (Long / Short Term)</li>
-      <li class="flex items-start"><span class="mr-2">💪</span>Physiotherapy Service</li>
-      <li class="flex items-start"><span class="mr-2">🏥</span>Health Care Medical Equipment Supply</li>
-      <li class="flex items-start"><span class="mr-2">💉</span>IV Injections</li>
-      <li class="flex items-start"><span class="mr-2">🩹</span>Wound Dressings</li>
-    </ul>
+<section id="services" class="mb-12 bg-green-200 p-6 rounded-xl shadow">
+  <h2 class="text-2xl font-bold text-green-700 mb-6">Our Services</h2>
+  <ul class="text-lg list-disc pl-5 space-y-6">
+
+    <!-- Service 1 -->
+    <li>
+      <button onclick="toggleDesc(0)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
+        🧑‍⚕️ Care Givers
+      </button>
+      <p class="hidden mt-2 text-gray-700 service-desc">
+        Our trained caregivers assist with daily activities like bathing, grooming, and feeding while ensuring emotional companionship. They help maintain hygiene, safety, and independence at home.
+        With a personalized approach, caregivers adapt to your loved one’s routine and emotional needs, providing peace of mind and reliable support.
+      </p>
+    </li>
+
+    <!-- Service 2 -->
+    <li>
+      <button onclick="toggleDesc(1)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
+        🩺 Nursing Care (Long / Short Term)
+      </button>
+      <p class="hidden mt-2 text-gray-700 service-desc">
+        Our skilled nurses offer both short and long-term medical care at home, including medication administration, monitoring vital signs, and post-surgical care.
+        We ensure your loved ones receive hospital-quality care in the comfort of their home with dignity and compassion.
+      </p>
+    </li>
+
+    <!-- Service 3 -->
+	<li>
+      <button onclick="toggleDesc(2)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
+        💪 Physiotherapy Service
+      </button>
+      <p class="hidden mt-2 text-gray-700 service-desc">
+        Experience professional physiotherapy in the comfort of your home.
+		Our certified physiotherapists provide personalized treatment plans for pain relief, recovery, and mobility improvement.
+        Ideal for seniors, post-surgery patients, and individuals with limited mobility.
+        Convenient, safe, and effective sessions tailored to your health needs.
+        Book your home visit today and start your journey to better movement!
+      </p>
+    </li>
+	
+     <!-- Service 4 -->
+	<li>
+      <button onclick="toggleDesc(3)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
+        🏥 Health Care Medical Equipment Supply
+      </button>
+      <p class="hidden mt-2 text-gray-700 service-desc">
+        We offer a wide range of high-quality medical equipment for sale and rent.
+        Products include hospital beds, wheelchairs, oxygen concentrators, suction machines, and more.
+        Perfect for patient recovery, post-surgery care, and elderly support at home.
+        All equipment is sanitized, well-maintained, and delivered with professional setup.
+        Flexible rental plans and prompt doorstep service for your convenience.
+      </p>
+    </li>
+	
+	<!-- Service 5 -->
+	<li>
+      <button onclick="toggleDesc(4)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
+        💉 IV Injections
+      </button>
+      <p class="hidden mt-2 text-gray-700 service-desc">
+        We offer a wide range of high-quality medical equipment for sale and rent.
+        Products include hospital beds, wheelchairs, oxygen concentrators, suction machines, and more.
+        Perfect for patient recovery, post-surgery care, and elderly support at home.
+        All equipment is sanitized, well-maintained, and delivered with professional setup.
+        Flexible rental plans and prompt doorstep service for your convenience.
+      </p>
+    </li>
+	
+	<!-- Service 6 -->
+	<li>
+      <button onclick="toggleDesc(5)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
+        🩹 Wound Dressings
+      </button>
+      <p class="hidden mt-2 text-gray-700 service-desc">
+        Get safe and professional IV injection services in the comfort of your home.
+        Administered by trained nurses following strict hygiene and medical protocols.
+        Ideal for hydration, vitamin therapy, antibiotics, and other prescribed treatments.
+        Reduces hospital visits and ensures personalized care at your convenience.
+        Quick response and reliable service for both short-term and ongoing needs.
+      </p>
+    </li>
+	
+	
+  </ul>
+</section>
+
+<script>
+  function toggleDesc(index) {
+    const allDescs = document.querySelectorAll(".service-desc");
+    allDescs.forEach((desc, i) => {
+      if (i === index) {
+        desc.classList.toggle("hidden");
+      } else {
+        desc.classList.add("hidden"); // optional: hide others when one is opened
+      }
+    });
+  }
+</script>
   </section>
 
 <!-- Slideshow Section -->
