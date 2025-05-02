@@ -150,6 +150,24 @@
   </a>
 </body>
 </html>
+<!-- Disable right-click and text copying -->
+<script>
+  // Disable right-click
+  document.addEventListener("contextmenu", event => event.preventDefault());
+
+  // Disable text selection
+  document.addEventListener("selectstart", event => event.preventDefault());
+
+  // Disable common Ctrl key shortcuts (copy, view source, etc.)
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && ["c", "u", "s", "a", "x"].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>
 
 
 
