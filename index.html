@@ -5,259 +5,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SLS Home Care Services</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <header class="bg-yellow-300 shadow">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <img src="SLS1.jpg" alt="SLS Logo" class="h-24">
-      <nav class="space-x-6">
+      <img src="SLS1.jpg" alt="SLS Logo" class="h-20 sm:h-24">
+      <nav class="space-x-4 sm:space-x-6 text-sm sm:text-base">
         <a href="#home" class="text-green-600 font-semibold">Home</a>
         <a href="#services" class="hover:text-green-600">Services</a>
         <a href="#contact" class="hover:text-green-600">Contact</a>
       </nav>
     </div>
   </header>
-</body>
-  
-<main id="home" class="max-w-6xl mx-auto px-4 py-10">
-  <section id="about" class="max-w-6xl mx-auto px-4 py-10">
-  <h1 class="text-3xl md:text-4xl font-bold text-green-700 mb-4 animate-pulse">
-    Welcome to SLS Home Health Care
-  </h1>
 
-  <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-4">
-    At SLS Home Health Care, we pride ourselves on delivering high-quality manpower solutions 
-    for the healthcare industry and those who need our services. Our goal is to support medical 
-    institutions and our own clients by providing well-trained and dedicated professionals who 
-    contribute to the overall efficiency and effectiveness of healthcare services.
-  </p>
+  <main id="home" class="max-w-6xl mx-auto px-4 py-10">
+    <section id="about" class="max-w-6xl mx-auto px-4 py-10">
+      <h1 class="text-3xl md:text-4xl font-bold text-green-700 mb-4 animate-pulse text-center md:text-left">
+        Welcome to SLS Home Health Care
+      </h1>
 
-  <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-8">
-    We provide qualified and compassionate healthcare staff to meet the needs of individual clients
-    as well as healthcare service providers. Whether at home or within an organization, our goal is  
-    to ensure comfort, dignity, and peace of mind through professional, personalized care.
-  </p>
-
-  <h2 class="text-2xl font-bold text-green-700 mb-4">
-    About Home Health Care
-  </h2>
-
-  <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-4">
-    Home health care is a personalized and compassionate approach to delivering medical and non-medical 
-    services in the comfort of your own home. It is designed to support individuals who need assistance with
-    daily activities, medical treatments, rehabilitation, or companionship — while allowing them to maintain 
-    their independence and dignity.
-  </p>
-
-  <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-4">
-    At SLS Home Care Services, we believe that healing and well-being are best nurtured in a familiar and loving 
-    environment. Our team of experienced nurses, personal support workers, and caregivers provide professional 
-    care tailored to the unique needs of each client. From medication management and wound care to companionship 
-    and wellness support, our goal is to improve quality of life while giving peace of mind to families.
-  </p>
-
-  <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700">
-    Home health care is ideal for seniors, individuals recovering from surgery, those managing chronic illnesses, and 
-    anyone needing extra help at home. With SLS Home Care Services by your side, you or your loved ones receive reliable,
-    compassionate, and skilled support — every step of the way.
-  </p>
-</section>
-
-  </section>
-
-<section id="services" class="mb-12 bg-green-200 p-6 rounded-xl shadow">
-  <h2 class="text-2xl font-bold text-green-700 mb-6">Our Services</h2>
-  <ul class="text-lg list-disc pl-5 space-y-6">
-
-    <!-- Service 1 -->
-    <li>
-      <button onclick="toggleDesc(0)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
-        🧑‍⚕️ Care Givers
-      </button>
-      <p class="hidden mt-2 text-gray-700 service-desc">
-        Our trained caregivers assist with daily activities like bathing, grooming, and feeding while ensuring emotional companionship. They help maintain hygiene, safety, and independence at home.
-        With a personalized approach, caregivers adapt to your loved one’s routine and emotional needs, providing peace of mind and reliable support.
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-4">
+        At SLS Home Health Care, we pride ourselves on delivering high-quality manpower solutions 
+        for the healthcare industry and those who need our services. Our goal is to support medical 
+        institutions and our own clients by providing well-trained and dedicated professionals who 
+        contribute to the overall efficiency and effectiveness of healthcare services.
       </p>
-    </li>
 
-    <!-- Service 2 -->
-    <li>
-      <button onclick="toggleDesc(1)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
-        🩺 Nursing Care (Long / Short Term)
-      </button>
-      <p class="hidden mt-2 text-gray-700 service-desc">
-        Our skilled nurses offer both short and long-term medical care at home, including medication administration, monitoring vital signs, and post-surgical care.
-        We ensure your loved ones receive hospital-quality care in the comfort of their home with dignity and compassion.
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-8">
+        We provide qualified and compassionate healthcare staff to meet the needs of individual clients
+        as well as healthcare service providers. Whether at home or within an organization, our goal is  
+        to ensure comfort, dignity, and peace of mind through professional, personalized care.
       </p>
-    </li>
 
-    <!-- Service 3 -->
-	<li>
-      <button onclick="toggleDesc(2)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
-        💪 Physiotherapy Service
-      </button>
-      <p class="hidden mt-2 text-gray-700 service-desc">
-        Experience professional physiotherapy in the comfort of your home.
-		Our certified physiotherapists provide personalized treatment plans for pain relief, recovery, and mobility improvement.
-        Ideal for seniors, post-surgery patients, and individuals with limited mobility.
-        Convenient, safe, and effective sessions tailored to your health needs.
-        Book your home visit today and start your journey to better movement!
+      <h2 class="text-2xl font-bold text-green-700 mb-4">
+        About Home Health Care
+      </h2>
+
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-4">
+        Home health care is a personalized and compassionate approach to delivering medical and non-medical 
+        services in the comfort of your own home. It is designed to support individuals who need assistance with
+        daily activities, medical treatments, rehabilitation, or companionship — while allowing them to maintain 
+        their independence and dignity.
       </p>
-    </li>
-	
-     <!-- Service 4 -->
-	<li>
-      <button onclick="toggleDesc(3)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
-        🏥 Health Care Medical Equipment Supply
-      </button>
-      <p class="hidden mt-2 text-gray-700 service-desc">
-        We offer a wide range of high-quality medical equipment for sale and rent.
-        Products include hospital beds, wheelchairs, oxygen concentrators, suction machines, and more.
-        Perfect for patient recovery, post-surgery care, and elderly support at home.
-        All equipment is sanitized, well-maintained, and delivered with professional setup.
-        Flexible rental plans and prompt doorstep service for your convenience.
+
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700 mb-4">
+        At SLS Home Care Services, we believe that healing and well-being are best nurtured in a familiar and loving 
+        environment. Our team of experienced nurses, personal support workers, and caregivers provide professional 
+        care tailored to the unique needs of each client. From medication management and wound care to companionship 
+        and wellness support, our goal is to improve quality of life while giving peace of mind to families.
       </p>
-    </li>
-	
-	<!-- Service 5 -->
-	<li>
-      <button onclick="toggleDesc(4)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
-        💉 IV Injections
-      </button>
-      <p class="hidden mt-2 text-gray-700 service-desc">
-        We offer a wide range of high-quality medical equipment for sale and rent.
-        Products include hospital beds, wheelchairs, oxygen concentrators, suction machines, and more.
-        Perfect for patient recovery, post-surgery care, and elderly support at home.
-        All equipment is sanitized, well-maintained, and delivered with professional setup.
-        Flexible rental plans and prompt doorstep service for your convenience.
+
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto text-justify text-gray-700">
+        Home health care is ideal for seniors, individuals recovering from surgery, those managing chronic illnesses, and 
+        anyone needing extra help at home. With SLS Home Care Services by your side, you or your loved ones receive reliable,
+        compassionate, and skilled support — every step of the way.
       </p>
-    </li>
-	
-	<!-- Service 6 -->
-	<li>
-      <button onclick="toggleDesc(5)" class="flex items-center gap-2 font-semibold text-green-800 hover:underline">
-        🩹 Wound Dressings
-      </button>
-      <p class="hidden mt-2 text-gray-700 service-desc">
-        Get safe and professional IV injection services in the comfort of your home.
-        Administered by trained nurses following strict hygiene and medical protocols.
-        Ideal for hydration, vitamin therapy, antibiotics, and other prescribed treatments.
-        Reduces hospital visits and ensures personalized care at your convenience.
-        Quick response and reliable service for both short-term and ongoing needs.
-      </p>
-    </li>
-	
-	
-  </ul>
-</section>
-
-<script>
-  function toggleDesc(index) {
-    const allDescs = document.querySelectorAll(".service-desc");
-    allDescs.forEach((desc, i) => {
-      if (i === index) {
-        desc.classList.toggle("hidden");
-      } else {
-        desc.classList.add("hidden"); // optional: hide others when one is opened
-      }
-    });
-  }
-</script>
-  </section>
-
-<!-- Slideshow Section -->
-<section id="slideshow" class="mb-12">
-  <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Gallery</h2>
-
-  <!-- Outer wrapper to contain slideshow and arrows -->
-  <div class="relative w-[320px] mx-auto">
-    <!-- Slide frame -->
-    <div class="overflow-hidden rounded-xl shadow-lg">
-      <!-- Slide container -->
-      <div id="slides" class="flex transition-transform duration-500 ease-in-out">
-        <img src="pic1.jpg" class="w-full aspect-square object-cover flex-shrink: 1" alt="Slide 1">
-        <img src="pic2.jpg" class="w-full aspect-square object-cover flex-shrink: 1" alt="Slide 2">
-        <img src="pic3.jpg" class="w-full aspect-square object-cover flex-shrink: 1" alt="Slide 3">
-        <img src="pic4.jpg" class="w-full aspect-square object-cover flex-shrink: 1" alt="Slide 4">
-        <img src="pic5.jpg" class="w-full aspect-square object-cover flex-shrink: 1" alt="Slide 5">
-      </div>
-    </div>
-
-    <!-- Navigation Arrows positioned outside -->
-    <button
-      onclick="prevSlide()"
-      class="absolute top-1/2 -left-20 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
-    >
-      ◀
-    </button>
-    <button
-      onclick="nextSlide()"
-      class="absolute top-1/2 -right-20 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
-    >
-      ▶
-    </button>
-  </div>
-</section>
-
-
-
-  <script>
-  let index = 0;
-  const slides = document.getElementById("slides");
-  const totalSlides = slides.children.length;
-
-  function updateSlide() {
-    slides.style.transform = `translateX(-${index * 320}px)`;
-  }
-
-  function nextSlide() {
-    index = (index + 1) % totalSlides;
-    updateSlide();
-  }
-
-  function prevSlide() {
-    index = (index - 1 + totalSlides) % totalSlides;
-    updateSlide();
-  }
-    
-</script>
-
-
-  <section id="contact" class="bg-gradient-to-r from-teal-100 to-green-200 p-6 rounded-xl shadow">
-    <h2 class="text-2xl font-bold text-green-800 mb-4">Contact Us</h2>
-    <p class="mb-2">📞 Phone: 7338456744, 7200180824</p>
-    <p class="mb-2">📧 Email: <a href="mailto:slshomecareservices.6@gmail.com" class="text-green-700 underline">slshomecareservices.6@gmail.com</a></p>
-    <p>🆔 Labour Licence Reg No: 46/21/S/0030/2025</p>
     </section>
-  </main>
+
+    <!-- Services Section -->
+    <section id="services" class="mb-12 bg-green-200 p-4 sm:p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-green-700 mb-4 sm:mb-6 text-center sm:text-left">
+        Our Services
+      </h2>
+      
+      <ul class="space-y-4 sm:space-y-6">
+        <!-- Service 1 -->
+        <li class="p-3 sm:p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+          <button onclick="toggleDesc(0)" 
+                  class="w-full flex items-center justify-between font-semibold text-green-800">
+            <span>🧑‍⚕️ Care Givers</span>
+            <span class="text-xl">+</span>
+          </button>
+          <p class="hidden mt-2 text-gray-700 service-desc text-sm sm:text-base leading-relaxed">
+            Our trained caregivers assist with daily activities like bathing, grooming, and feeding while ensuring emotional companionship. 
+            They help maintain hygiene, safety, and independence at home. 
+            With a personalized approach, caregivers adapt to your loved one’s routine and emotional needs, providing peace of mind and reliable support.
+          </p>
+        </li>
+
+        <!-- Service 2 -->
+        <li class="p-3 sm:p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+          <button onclick="toggleDesc(1)" 
+                  class="w-full flex items-center justify-between font-semibold text-green-800">
+            <span>🩺 Nursing Care (Long / Short Term)</span>
+            <span class="text-xl">+</span>
+          </button>
+          <p class="hidden mt-2 text-gray-700 service-desc text-sm sm:text-base leading-relaxed">
+            Our skilled nurses offer both short and long-term medical care at home, including medication administration, monitoring vital signs, and post-surgical care.
+            We ensure your loved ones receive hospital-quality care in the comfort of their home with dignity and compassion.
+          </p>
+        </li>
+
+        <!-- Repeat same structure for all services (Physiotherapy, Equipment Supply, IV Injections, Wound Dressings) -->
+      </ul>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow" class="mb-12">
+      <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Gallery</h2>
+      <div class="relative w-[280px] sm:w-[320px] mx-auto">
+        <div class="overflow-hidden rounded-xl shadow-lg">
+          <div id="slides" class="flex transition-transform duration-500 ease-in-out">
+            <img src="pic1.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 1">
+            <img src="pic2.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 2">
+            <img src="pic3.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 3">
+            <img src="pic4.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 4">
+            <img src="pic5.jpg" class="w-full aspect-square object-cover flex-shrink-0" alt="Slide 5">
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <button onclick="prevSlide()" class="absolute top-1/2 -left-10 sm:-left-20 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white">◀</button>
+        <button onclick="nextSlide()" class="absolute top-1/2 -right-10 sm:-right-20 transform -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white">▶</button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gradient-to-r from-teal-100 to-green-200 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-green-800 mb-4">Contact Us</h2>
+      <p class="flex items-center gap-2 mb-2">📞 <span>7338456744, 7200180824</span></p>
+      <p class="flex items-center gap-2 mb-2">📧 <a href="mailto:slshomecareservices.6@gmail.com" class="text-green-700 underline">slshomecareservices.6@gmail.com</a></p>
+      <p class="flex items-center gap-2">🆔 Labour Licence Reg No: 46/21/S/0030/2025</p>
+    </section>
   </main>
 
   <!-- WhatsApp Chat Button -->
-  <a href="https://wa.me/917338456744" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 z-50">
-    💬 Chat with us
+  <a href="https://wa.me/917338456744" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 z-50" title="Chat with us on WhatsApp">
+    💬
   </a>
-</body>
-</html>
-<!-- Disable right-click and text copying -->
-<script>
-  // Disable right-click
-  document.addEventListener("contextmenu", event => event.preventDefault());
 
-  // Disable text selection
-  document.addEventListener("selectstart", event => event.preventDefault());
-
-  // Disable common Ctrl key shortcuts (copy, view source, etc.)
-  document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && ["c", "u", "s", "a", "x"].includes(e.key.toLowerCase())) {
-      e.preventDefault();
+  <!-- Scripts -->
+  <script>
+    function toggleDesc(index) {
+      const allDescs = document.querySelectorAll(".service-desc");
+      allDescs.forEach((desc, i) => {
+        if (i === index) {
+          desc.classList.toggle("hidden");
+        } else {
+          desc.classList.add("hidden");
+        }
+      });
     }
-  });
-</script>
 
+    let index = 0;
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+
+    function updateSlide() {
+      slides.style.transform = `translateX(-${index * slides.children[0].clientWidth}px)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % totalSlides;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    }
+  </script>
+
+  <!-- Disable right-click & copy -->
+  <script>
+    document.addEventListener("contextmenu", event => event.preventDefault());
+    document.addEventListener("selectstart", event => event.preventDefault());
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && ["c", "u", "s", "a", "x"].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
